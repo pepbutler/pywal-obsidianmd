@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "usage: $0 [vault-path]" 1>&2
+    exit 1
+fi
+
+wal_template=$HOME/.config/wal/templates/obsidian_snip.css
+
+rm_link () {
+    rm $1/.obsidian/snippets/obsidian_snip.css
+}
+
+rm_temp () {
+    rm $wal_template
+}
+
+echodone () {
+    echo "Snippet removed"
+}
+
+rm_link
+rm_temp
+echodone

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "usage: $0 [vault-path]" 1>&2
+    exit 1
+fi
+
+wal_template=$HOME/.config/wal/templates/obsidian_snip.css
+wal_cached=$HOME/.cache/wal/obsidian_snip.css
+
+install_template () {
+    cp $CWD/obsidian_snip.css $wal_template
+    touch $wal_cached
+}
+
+link_template () {
+    ln -sr $wal_cached $1/.obsidian/snippets/obsidian_snip.css
+}
+
+echodone () {
+    echo "Snippet added, run pywal for changes and restart obsidian"
+}
+
+install_template
+link_template $1
+echodone
