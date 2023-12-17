@@ -10,7 +10,7 @@ Settings -> Appearance and CSS snippets are listed at the bottom.
 ### Install
 
 ```
-git clone https://github.com/mefwew/pywal-obsidianmd
+git clone https://github.com/pepbutler/pywal-obsidianmd
 cd pywal-obsidianmd
 ./install
 ```
