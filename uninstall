@@ -5,10 +5,10 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-wal_template=$HOME/.config/wal/templates/obsidian_snip.css
+wal_template=$HOME/.config/wal/templates/pywal.css
 
 rm_link () {
-    rm $1/.obsidian/snippets/obsidian_snip.css
+    rm $1/.obsidian/snippets/pywal.css
 }
 
 rm_temp () {
@@ -19,6 +19,6 @@ echodone () {
     echo "Snippet removed"
 }
 
-rm_link
+rm_link $1
 rm_temp
 echodone

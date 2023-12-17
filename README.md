@@ -1,6 +1,7 @@
 # pywal-obsidianmd
 
-Script to install template and link it to obsidian vault.
+Script to install template and link it to obsidian vault. To activate, go to
+Settings -> Appearance and CSS snippets are listed at the bottom.
 
 ### Preview
 

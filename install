@@ -5,16 +5,16 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-wal_template=$HOME/.config/wal/templates/obsidian_snip.css
-wal_cached=$HOME/.cache/wal/obsidian_snip.css
+wal_template=$HOME/.config/wal/templates/pywal.css
+wal_cached=$HOME/.cache/wal/pywal.css
 
 install_template () {
-    cp $(pwd)/obsidian_snip.css $wal_template
+    cp $(pwd)/pywal.css $wal_template
     touch $wal_cached
 }
 
 link_template () {
-    ln -sr $wal_cached $1/.obsidian/snippets/obsidian_snip.css
+    ln -sr $wal_cached $1/.obsidian/snippets/pywal.css
 }
 
 echodone () {
