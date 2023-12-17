@@ -9,7 +9,7 @@ wal_template=$HOME/.config/wal/templates/obsidian_snip.css
 wal_cached=$HOME/.cache/wal/obsidian_snip.css
 
 install_template () {
-    cp $CWD/obsidian_snip.css $wal_template
+    cp $(pwd)/obsidian_snip.css $wal_template
     touch $wal_cached
 }
 
